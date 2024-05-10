@@ -1,6 +1,4 @@
 
-public interface ListNode {
-
-    String next = null;
+public class ListNode {
 
 }
