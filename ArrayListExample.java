@@ -1,35 +1,27 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class ArrayListExample {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        // Syntsx
-         ArrayList<Integer> list = new ArrayList<>(5);
-        //  list.add(67);
-        //  list.add(57);
-        //  list.add(47);
-        //  list.add(37);
-        //  list.add(27);
-        //  list.add(17);
-        //  list.add(77);
-        //  list.add(87);
-        //  list.add(97);
+        //Size of arrayList
+        int n=5;
 
-        //  System.out.println(list.contains(67));
-        //  list.set(2, 99);
-        //  System.out.println(list);
+        //Declaratio of a arrayList with initalization with n
+        ArrayList<Integer> arr1 = new ArrayList<Integer>(n);
+        ArrayList<Integer> arr2 = new ArrayList<Integer>();
 
-         //input
-         for(int i=0; i<5; i++){
-            list.add(in.nextInt());
+        //Printing the ArryList 
+        System.out.println("Array 1: " + arr1);
+        System.out.println("Array 2: " + arr2);
 
-         }
-         
+        //Appending new element at the end of the list
+        for(int i=1; i<=n;i++){
+            arr1.add(i);
+            arr2.add(i);
+        }
 
-         
-
+        //Printing the ArryList
+        System.out.println("Array 1: " + arr1);
+        System.out.println("Array 2: " + arr2);
     }
     
 }
